@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'multilang_site.urls'
@@ -134,6 +136,14 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
 )
 STATIC_URL = '/static/'
+
+# Simplified static file serving.
+# https://warehouse.readthedocs.io/en/latest/pypi_django_compressor.html#runserver
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Collect static files
+if os.environ.get('DJANGO_COLLECT_STATIC'):
+    os.system('python manage.py collectstatic --noinput')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
