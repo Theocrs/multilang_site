@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-27 17:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\main\models.py:6
+msgid "title"
+msgstr "title"
+
+#: .\main\models.py:7
+msgid "content"
+msgstr "Content"
+
+#: .\main\models.py:8
+msgid "publication date"
+msgstr "Publication date"
+
+#: .\main\templates\main\article_create.html:6
+msgid "Créer un nouvel article"
+msgstr "Create a new article"
+
+#: .\main\templates\main\article_create.html:11
+#: .\main\templates\main\article_update.html:11
+msgid "Envoyer"
+msgstr "Send"
+
+#: .\main\templates\main\article_delete.html:6
+msgid "Supprimer l'article"
+msgstr "Delete this article"
+
+#: .\main\templates\main\article_delete.html:8
+msgid "Etes-vous sûr de vouloir supprimer l'article"
+msgstr "Are you sure you want to delete the article"
+
+#: .\main\templates\main\article_delete.html:12
+msgid "Supprimer"
+msgstr "Delete"
+
+#: .\main\templates\main\article_detail.html:9
+msgid "Contenu"
+msgstr "Content"
+
+#: .\main\templates\main\article_detail.html:10
+msgid "Date de publication"
+msgstr "Publication date"
+
+#: .\main\templates\main\article_detail.html:13
+msgid "Modifier cet article"
+msgstr "Update this article"
+
+#: .\main\templates\main\article_detail.html:15
+msgid "Supprimer cet article"
+msgstr "Delete this article"
+
+#: .\main\templates\main\article_detail.html:17
+msgid "Retourner à la liste des articles"
+msgstr "Return to the list of articles"
+
+#: .\main\templates\main\article_list.html:14
+msgid "modifier"
+msgstr "update"
+
+#: .\main\templates\main\article_update.html:6
+msgid "Mise à jour de l'article"
+msgstr "Update this article"
+
+#: .\main\templates\main\base.html:32
+msgid "Change Language"
+msgstr "Change Language"
+
+#: .\main\templates\main\chatbot.html:23
+msgid "Your message"
+msgstr "Your message"
+
+#: .\main\templates\main\chatbot.html:24
+msgid "Send"
+msgstr "Send"
+
+#: .\multilang_site\settings.py:120
+msgid "French"
+msgstr ""
+
+#: .\multilang_site\settings.py:121
+msgid "English"
+msgstr ""
