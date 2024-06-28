@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<h1>{% trans "Supprimer l'article" %}</h1>
+
+<p>{% trans "Etes-vous sûr de vouloir supprimer l'article" %} : {{ article.title }} ?</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="{% trans 'Supprimer' %}">
+</form>
+
+{% endblock %}
