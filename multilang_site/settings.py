@@ -33,6 +33,10 @@ ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 # Utilisez la clé API OpenAI depuis les variables d'environnement
 CHATGPT_KEY = os.environ.get("CHATGPT_KEY")
 
+# Simplified static file serving.
+# https://warehouse.readthedocs.io/en/latest/pypi_django_compressor.html#runserver
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -136,10 +140,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
 )
 STATIC_URL = '/static/'
-
-# Simplified static file serving.
-# https://warehouse.readthedocs.io/en/latest/pypi_django_compressor.html#runserver
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Collect static files
 if os.environ.get('DJANGO_COLLECT_STATIC'):
